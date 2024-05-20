@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <marquee scrollamount="5">
+        Только три дня скидка <span class="red-text">-30%</span> на все
+    </marquee>
+    <header class="">
+        <div class="header-info d-flex-between">
+            <div class="header-contact">
+                <a href="tell: +79519992834">
+                    <img src="images/icons/phone-call 1.svg" alt="">
+                    +7 951 999 28 34
+                </a>
+                <a href="mailto: info@stagebox.ru">
+                    <img src="images/icons/email 1.svg" alt="">
+                    info@stagebox.ru
+                </a>
+            </div>
+            <img src="" alt="">
+            <div class="header-btns">
+                <button class="header-btn">
+                    <img class="header-btn-image" src="images/icons/Корзина.svg" alt="">
+                </button>
+                <button class="header-btn">
+                    <img class="header-btn-image" src="images/icons/Личный кабинет.svg" alt="">
+                </button>
+                <button class="header-btn">
+                    <img class="header-btn-image" src="images/icons/Избранное.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="header-navigation d-flex-between">
+            <nav>
+                <a href="#">Кроссовки</a>
+                <a href="#">Одежда</a>
+                <a href="#">Аксессуары</a>
+                <a href="#">Блок</a>
+                <a href="#">Отзывы</a>
+            </nav>
+            <div class="header-search">
+                <input class="font-ruda" type="text" placeholder="Поиск">
+                <button class="btn-search">
+                    <img src="images/icons/search.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    
+    
+    <main>
+        <section class="main-slider">
+            <div class="main-slider-element" style="left: 0%;">
+                <div class="slider-info">
+                    <div class="blue-box"></div>
+                    <div>
+                        <h2>Adidas <br>
+                            Nite Jogger</h2>
+                        <p>Городские кроссовки в <br> ярком стиле 80-х</p>
+                        <button>Смотреть все</button>
+                    </div>
+                    <img src="images/slider/adidas-Nite-Jogger.png" alt="Не найдено">
+                </div>
+                <div class="slider-btns">
+                    <div class="slider-btn">
+                        <img class="slider-image-mini" src="images/slider/adidas-eazy-boost-mini.png" alt="">
+                        <span>Adidas <br> eazy boost</span>
+                        <button class="slider-arrow" onclick="changePosition(1)">
+                            <img src="images/icons/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                    <!--  position = 0 => nite jogger-->
+                    <!--  position = 200 => eazy boost-->
+                    <!--  position = 400 => air max-->
+
+                    <div class="slider-btn" >
+                        <img class="slider-image-mini" src="images/slider/nike-air-max-mini.png" alt="">
+                        <span>Nike <br> air max</span>
+                        <button class="slider-arrow" onclick="changePosition(2)">
+                            <img src="images/icons/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider-element" style="left: 200%;">
+                <div class="slider-info">
+                    <div class="blue-box"></div>
+                    <div>
+                        <h2>Adidas <br>
+                            Yeezy boost</h2>
+                        <p>Городские кроссовки в <br> ярком стиле 80-х</p>
+                        <button>Смотреть все</button>
+                    </div>
+                    <img src="images/slider/adidas-eazy-boost.png" alt="Не найдено">
+                </div>
+                <div class="slider-btns">
+                    <div class="slider-btn">
+                        <img class="slider-image-mini" src="images/slider/adidas-Nite-Jogger-mini.png" alt="">
+                        <span>Adidas <br> nite jogger</span>
+                        <button class="slider-arrow" onclick="changePosition(0)">
+                            <img src="images/icons/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="slider-btn">
+                        <img class="slider-image-mini" src="images/slider/nike-air-max-mini.png" alt="">
+                        <span>nike <br> air max</span>
+                        <button class="slider-arrow" onclick="changePosition(2)">
+                            <img src="images/icons/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider-element" style="left: -200%;">
+                <div class="slider-info">
+                    <div class="blue-box"></div>
+                    <div>
+                        <h2>Nike <br>
+                            air max</h2>
+                        <p>Городские кроссовки в <br> ярком стиле 80-х</p>
+                        <button>Смотреть все</button>
+                    </div>
+                    <img src="images/slider/nike-air-max.png" alt="Не найдено">
+                </div>
+                <div class="slider-btns">
+                    <div class="slider-btn">
+                        <img class="slider-image-mini" src="images/slider/adidas-Nite-Jogger-mini.png" alt="">
+                        <span>Adidas <br> nite jogger</span>
+                        <button class="slider-arrow" onclick="changePosition(0)">
+                            <img src="images/icons/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="slider-btn">
+                        <img class="slider-image-mini" src="images/slider/adidas-eazy-boost-mini.png" alt="">
+                        <span>Adidas <br> eazy boost</span>
+                        <button class="slider-arrow" onclick="changePosition(1)">
+                            <img src="images/icons/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <figure class="advantage">
+                <div class="advantage-bgcolor" style="background-color: #B3C0D2;">
+                    <img src="images/advantages/like 1.png" alt="">
+                </div>
+                <h3>Гарантируем качество товара</h3>
+            </figure>
+            <figure class="advantage">
+                <div class="advantage-bgcolor" style="background-color: #CFEBC6;">
+                    <img src="images/advantages/help 1.png" alt="">
+                </div>
+                <h3>Поможем  подобрать размер</h3>
+            </figure>
+            <figure class="advantage">
+                <div class="advantage-bgcolor" style="background-color: #FFE1E1;">
+                    <img src="images/advantages/box 1.png" alt="">
+                </div>
+                <h3>Быстро доставим покупку</h3>
+            </figure>
+        </section>
+        
+        <h2>Блог</h2>
+        
+        <section class="blog">
+            <div class="blog-articles">
+                <article>
+                    <img src="images/blog/air-max 270.png" alt="">
+                    <div>
+                        <h4>КРОССОВКИ NIKE AIR MAX 270</h4>
+                        <p>Nike Air Max 720 Saturn представлен в совершенно новой цветовой гамме Black / Team Orange.</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/blog/air-max 720.png" alt="">
+                    <div>
+                        <h4>Кроссовки Nike Air Max 720 Saturn</h4>
+                        <p>Nike Air Max 720 Saturn представлен в совершенно новой цветовой гамме Black / Team Orange.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="subscribe">
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content d-flex-between">
+            <img src="" alt="">
+            <div class="footer-contacts">
+                <div class="footer-social">
+                    <a href="#">
+                        <img src="images/icons/inst.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/icons/vk.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/icons/whatsapp.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <a href="tell: +79519992834">
+                        <img src="images/icons/phone-footer.svg" alt="">
+                        +7 951 999 28 34
+                    </a>
+                    <a href="mailto: info@stagebox.ru">
+                        <img src="images/icons/email-footer.svg" alt="">
+                        info@stagebox.ru
+                    </a>
+                </div>
+            </div>
+            <div class="footer-service">
+                <a href="#">Доставка</a>
+                <a href="#">Гарантии</a>
+                <a href="#">Таблицы размеров</a>
+                <a href="#">Обмен и возврат</a>
+                <a href="#">Вопросы и ответы</a>
+            </div>
+            <div class="footer-btns">
+                <div class="footer-main-btns">
+                    <button class="header-btn">
+                        <img class="header-btn-image" src="images/icons/Корзина-footer.svg" alt="">
+                    </button>
+                    <button class="header-btn">
+                        <img class="header-btn-image" src="images/icons/Личный кабинет-footer.svg" alt="">
+                    </button>
+                </div>
+                <div class="header-search footer-search">
+                    <input class="font-ruda" type="text" placeholder="Поиск">
+                    <button class="btn-search">
+                        <img src="images/icons/search.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/main-slider.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <marquee scrollamount="5">
+        Только три дня скидка <span class="red-text">-30%</span> на все
+    </marquee>
+    <header class="">
+        <div class="header-info d-flex-between">
+            <div class="header-contact">
+                <a href="tell: +79519992834">
+                    <img src="images/icons/phone-call 1.svg" alt="">
+                    +7 951 999 28 34
+                </a>
+                <a href="mailto: info@stagebox.ru">
+                    <img src="images/icons/email 1.svg" alt="">
+                    info@stagebox.ru
+                </a>
+            </div>
+            <img src="" alt="">
+            <div class="header-btns">
+                <button class="header-btn">
+                    <img class="header-btn-image" src="images/icons/Корзина.svg" alt="">
+                </button>
+                <button class="header-btn">
+                    <img class="header-btn-image" src="images/icons/Личный кабинет.svg" alt="">
+                </button>
+                <button class="header-btn">
+                    <img class="header-btn-image" src="images/icons/Избранное.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="header-navigation d-flex-between">
+            <nav>
+                <a href="#">Кроссовки</a>
+                <a href="#">Одежда</a>
+                <a href="#">Аксессуары</a>
+                <a href="#">Блок</a>
+                <a href="#">Отзывы</a>
+            </nav>
+            <div class="header-search">
+                <input class="font-ruda" type="text" placeholder="Поиск">
+                <button class="btn-search">
+                    <img src="images/icons/search.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-catalog">
+        <div class="main-filters">
+            <div class="main-brands">
+                <p>Бренд</p>
+                <label><input checked class="brand-checkbox" onchange="showProducts()" type="checkbox"
+                        value="NIKE">NIKE</label>
+                <label><input checked class="brand-checkbox" onchange="showProducts()" type="checkbox"
+                        value="HUSHPUPPIES">HUSHPUPPIES</label>
+                <label><input checked class="brand-checkbox" onchange="showProducts()" type="checkbox"
+                        value="ADIDAS">ADIDAS</label>
+                <label><input checked class="brand-checkbox" onchange="showProducts()" type="checkbox"
+                        value="Reebok">Reebok</label>
+                <label><input checked class="brand-checkbox" onchange="showProducts()" type="checkbox"
+                        value="Vans">Vans</label>
+            </div>
+
+            <div class="main-category">
+                <p>Категории</p>
+                <label><input checked class="category-checkbox" onchange="showProducts()" type="checkbox"
+                        value="RUNNING">RUNNING</label>
+                <label><input checked class="category-checkbox" onchange="showProducts()" type="checkbox"
+                        value="FOOTBALL">FOOTBALL</label>
+                <label><input checked class="category-checkbox" onchange="showProducts()" type="checkbox"
+                        value="CASUAL">CASUAL</label>
+                <label><input checked class="category-checkbox" onchange="showProducts()" type="checkbox"
+                        value="FORMAL">FORMAL</label>
+            </div>
+
+            <div class="main-price">
+                <p>Цена</p>
+                <input type="number" onchange="showProducts()" placeholder="от" class="min-price">
+                <input type="number" onchange="showProducts()" placeholder="до" class="max-price">
+            </div>
+        </div>
+
+        <div class="main-catalog-content">
+            <div class="main-settings">
+                <div class="main-sort">
+                    <p>Сортировка</p>
+                    <select class="sort" onchange="showProducts()">
+                        <option value="default">По умолчанию</option>
+                        <option value="cheaper">По цене (дешевле)</option>
+                        <option value="expensive">По цене (дороже)</option>
+                    </select>
+                </div>
+                <div class="main-counter">
+                    <p>Количество</p>
+                    <button class="count-btn" onclick="showProducts(18)">18</button>
+                    <button class="count-btn" onclick="showProducts(30)">30</button>
+                    <button class="count-btn" onclick="showProducts(60)">60</button>
+                </div>
+            </div>
+            <section class="products">
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content d-flex-between">
+            <img src="" alt="">
+            <div class="footer-contacts">
+                <div class="footer-social">
+                    <a href="#">
+                        <img src="images/icons/inst.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/icons/vk.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/icons/whatsapp.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <a href="tell: +79519992834">
+                        <img src="images/icons/phone-footer.svg" alt="">
+                        +7 951 999 28 34
+                    </a>
+                    <a href="mailto: info@stagebox.ru">
+                        <img src="images/icons/email-footer.svg" alt="">
+                        info@stagebox.ru
+                    </a>
+                </div>
+            </div>
+            <div class="footer-service">
+                <a href="#">Доставка</a>
+                <a href="#">Гарантии</a>
+                <a href="#">Таблицы размеров</a>
+                <a href="#">Обмен и возврат</a>
+                <a href="#">Вопросы и ответы</a>
+            </div>
+            <div class="footer-btns">
+                <div class="footer-main-btns">
+                    <button class="header-btn">
+                        <img class="header-btn-image" src="images/icons/Корзина-footer.svg" alt="">
+                    </button>
+                    <button class="header-btn">
+                        <img class="header-btn-image" src="images/icons/Личный кабинет-footer.svg" alt="">
+                    </button>
+                </div>
+                <div class="header-search footer-search">
+                    <input class="font-ruda" type="text" placeholder="Поиск">
+                    <button class="btn-search">
+                        <img src="images/icons/search.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/generateProducts.js"></script>
+
+</body>
+
+</html>
